@@ -1,0 +1,4 @@
+p.stripped:nth-child(odd) {
+   background-color: #ebebeb;
+}
+
