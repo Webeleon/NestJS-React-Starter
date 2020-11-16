@@ -24,3 +24,8 @@ jobs:
 
     - name: lint
       run: npm run lint
+
+    - name: Coveralls
+        uses: coverallsapp/github-action@master
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
