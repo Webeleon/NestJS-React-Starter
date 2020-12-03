@@ -9,6 +9,21 @@ module.exports = {
         use: 'ts-loader',
         exclude: [/node_modules/, /src/, /dist/],
       },
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
+          "style-loader",
+          "css-loader",
+          "sass-loader"
+        ],
+      },
+      {
+        test: /\.(gif|png|jpe?g|svg)$/i,
+        loader: 'file-loader',
+        options: {
+          publicPath: 'dist'
+        }
+      }
     ],
   },
   resolve: {
