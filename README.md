@@ -1,6 +1,6 @@
 ## Pre-requisite
 
-- node 10+ LTS
+- node 14+ LTS
 
 ## Configuration
 
