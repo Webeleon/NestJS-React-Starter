@@ -1,6 +1,6 @@
 {
   "name": "nestjs-react-starter",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "a starter project for nestjs and react",
   "author": "Webeleon <julien@webeleon.dev>",
   "private": true,
@@ -25,7 +25,9 @@
     "test:e2e": "jest --config ./test/jest-e2e.json --force-exit --detectOpenHandles",
     "migrate:create": "migrate create --template-file ./src/migration-helpers/template.ts --migrations-dir=\"./src/migrations\" --compiler=\"ts:./src/migration-helpers/ts-compiler.js\"",
     "migrate:up": "migrate --migrations-dir=\"./src/migrations\" --compiler=\"ts:./src/migration-helpers/ts-compiler.js\" up",
-    "migrate:down": "migrate --migrations-dir=\"./src/migrations\" --compiler=\"ts:./src/migration-helpers/ts-compiler.js\" down"
+    "migrate:down": "migrate --migrations-dir=\"./src/migrations\" --compiler=\"ts:./src/migration-helpers/ts-compiler.js\" down",
+    "prepare": "husky install",
+    "release": "standard-version"
   },
   "dependencies": {
     "@nestjs/common": "7.1.2",
@@ -64,7 +66,7 @@
     "eslint-config-prettier": "6.15.0",
     "eslint-plugin-import": "2.22.1",
     "file-loader": "6.2.0",
-    "husky": "4.3.8",
+    "husky": "^6.0.0",
     "jest": "26.6.3",
     "lint-staged": "10.5.4",
     "mongodb-memory-server": "6.9.6",
@@ -74,6 +76,7 @@
     "react-router-dom": "5.2.0",
     "sass": "1.32.12",
     "sass-loader": "10.1.1",
+    "standard-version": "^9.3.0",
     "style-loader": "2.0.0",
     "supertest": "4.0.2",
     "ts-jest": "26.5.6",
@@ -97,12 +100,6 @@
     },
     "coverageDirectory": "../coverage",
     "testEnvironment": "node"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "npx --no-install commitlint --edit $1"
-    }
   },
   "lint-staged": {
     "*.ts": "prettier --write",
