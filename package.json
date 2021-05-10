@@ -26,7 +26,8 @@
     "migrate:create": "migrate create --template-file ./src/migration-helpers/template.ts --migrations-dir=\"./src/migrations\" --compiler=\"ts:./src/migration-helpers/ts-compiler.js\"",
     "migrate:up": "migrate --migrations-dir=\"./src/migrations\" --compiler=\"ts:./src/migration-helpers/ts-compiler.js\" up",
     "migrate:down": "migrate --migrations-dir=\"./src/migrations\" --compiler=\"ts:./src/migration-helpers/ts-compiler.js\" down",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "release": "standard-version"
   },
   "dependencies": {
     "@nestjs/common": "7.1.2",
@@ -75,6 +76,7 @@
     "react-router-dom": "5.2.0",
     "sass": "1.32.12",
     "sass-loader": "10.1.1",
+    "standard-version": "^9.3.0",
     "style-loader": "2.0.0",
     "supertest": "4.0.2",
     "ts-jest": "26.5.6",
