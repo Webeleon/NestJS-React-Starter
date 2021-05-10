@@ -1,6 +1,6 @@
 {
   "name": "nestjs-react-starter",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "a starter project for nestjs and react",
   "author": "Webeleon <julien@webeleon.dev>",
   "private": true,
