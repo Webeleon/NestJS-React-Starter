@@ -30,10 +30,10 @@
     "release": "standard-version"
   },
   "dependencies": {
-    "@nestjs/common": "7.1.2",
-    "@nestjs/core": "7.1.2",
+    "@nestjs/common": "7.6.17",
+    "@nestjs/core": "7.6.17",
     "@nestjs/mongoose": "7.2.4",
-    "@nestjs/platform-express": "7.1.2",
+    "@nestjs/platform-express": "7.6.17",
     "axios": "0.21.1",
     "dotenv": "8.2.0",
     "ejs": "3.1.6",
@@ -47,9 +47,9 @@
   "devDependencies": {
     "@commitlint/cli": "12.1.4",
     "@commitlint/config-conventional": "12.1.4",
-    "@nestjs/cli": "7.2.0",
+    "@nestjs/cli": "7.6.0",
     "@nestjs/schematics": "7.3.1",
-    "@nestjs/testing": "7.1.2",
+    "@nestjs/testing": "7.6.17",
     "@types/express": "4.17.12",
     "@types/got": "9.6.11",
     "@types/jest": "26.0.23",
