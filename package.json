@@ -38,7 +38,7 @@
     "dotenv": "8.6.0",
     "ejs": "3.1.6",
     "lodash": "4.17.21",
-    "mongoose": "5.13.10",
+    "mongoose": "5.13.12",
     "reflect-metadata": "0.1.13",
     "rimraf": "3.0.2",
     "rxjs": "6.6.7",
