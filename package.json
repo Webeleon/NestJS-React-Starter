@@ -36,7 +36,7 @@
     "@nestjs/platform-express": "7.6.18",
     "axios": "0.27.2",
     "dotenv": "8.6.0",
-    "ejs": "3.1.9",
+    "ejs": "3.1.10",
     "lodash": "4.17.21",
     "mongoose": "5.13.21",
     "reflect-metadata": "0.1.13",
